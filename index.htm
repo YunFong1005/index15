@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href = "css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src= "http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<style type="text/css">
+		p{
+			color:red;
+			margin:5px;
+			cursor:pointer;
+		}
+		p:hover{
+			background:yellow;
+		}
+		.rice1{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 0;
+			background: rgba(0,0,0,0.5);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.X{
+			position: fixed;
+			top:0;
+			right: 0;
+			z-index: 10;
+			background:  rgba(0,0,0,0.5);
+			display: flex;
+			
+		}
+
+
+	</style>
+</head>
+<body>
+<article id = "profile">
+	 <div class = "inner">
+	
+	<h2>關於我們的簡介</h2>
+
+</div>
+	 </article>
+	 
+	<h3> 很多住在土城的朋友們有個問號
+土城住那麼久了，哪裡來的「央二巷」
+我們位在中央路二段巷子裡
+故取名「央二巷」滷肉飯餐館
+隱身巷弄裡的好滋味～
+</h3>
+
+<h3>在環境上面在意乾淨整潔、舒適，努力提供有溫度的服務，
+希望大家外食也能吃得美味又健康！
+</h3>
+<h3>關於我們的特色～
+湯頭用蔬果、豬骨⋯等天然食材熬煮，當天現煮限量，
+我們有屬於自己特製「獨家口味」的辣椒醬，
+米是從產地直送的「一等米」，粒粒飽滿分明，
+使用的鹽巴是「以馬內利天然鹽」，
+我們有用桂花、山楂、烏梅⋯等天然材料熬煮的「桂山梅茶」去油解膩、透心涼，
+我們有太多太多等著您來發現的點點滴滴，期待您的光臨。</h3>
+<p>點我查看我們的大圖</p>
+	<div class="rice1">
+		
+		
+	<a href="https://yangerxiang.weebly.com/" target="_blank"><img src="rice.jpg"></a>
+	<div class="X" >
+		<img src="X.png" width="100" height="100">
+	</div>
+	
+
+
+
+	<script type="text/javascript">
+		$('p').click(function(){
+			$('.rice1').slideToggle();
+		});
+		$('p').click(function(){
+			$('.X').slideToggle();
+		});
+		$('.X').click(function(){
+			$('.rice1').slideToggle();
+		});
+		$('.X').click(function(){
+			$('.X').slideToggle();
+		});
+	</script>
+
+</body>
+</html>
